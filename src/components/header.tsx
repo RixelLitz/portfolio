@@ -1,7 +1,7 @@
 export default function Header() {
   return (
     <header className="flex flex-col gap-6 w-full">
-      <div className="font-fredoka text-black font-normal flex justify-center w-full bg-purple-600">
+      <div className="font-fredoka text-white font-normal flex justify-center w-full bg-purple-600">
         <h1>Entre em contato comigo clicando aqui!</h1>
       </div>
       <div className="flex justify-center items-center gap-6">
