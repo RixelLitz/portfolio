@@ -1,4 +1,5 @@
 import Header from './components/header'
+import About from './sections/aboutme/about'
 import Main from './sections/main/main'
 
 
@@ -7,6 +8,7 @@ export function App() {
     <>
       <Header />
       <Main />
+      <About/>
     </>
   )
 }

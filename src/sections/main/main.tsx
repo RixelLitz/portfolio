@@ -14,7 +14,7 @@ export default function Main() {
               Rian Britto Pereira
             </h1>
             <h2 className="flex justify-center   p-2 bg-purple-400 rounded-full font-fredoka text-4xl text-black ">
-              Software Engineer{' '}
+              FullStack Developer{' '}
             </h2>
           </div>
           <div className=" h-full w-1/2 flex justify-center items-center">
