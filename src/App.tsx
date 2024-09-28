@@ -1,6 +1,7 @@
 import Header from './components/header'
 import About from './sections/aboutme/about'
 import Main from './sections/main/main'
+import Projects from './sections/projects/projects'
 
 
 export function App() {
@@ -9,6 +10,7 @@ export function App() {
       <Header />
       <Main />
       <About/>
+      <Projects/>
     </>
   )
 }
