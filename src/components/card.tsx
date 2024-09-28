@@ -17,33 +17,52 @@ interface MediaCardProps {
   technologies: string[];
 }
 
-const MediaCard: React.FC<MediaCardProps> = ({ 
-  image, 
-  title, 
-  description, 
-  codeLink, 
-  deployLink, 
-  technologies 
+const MediaCard: React.FC<MediaCardProps> = ({
+  image,
+  title,
+  description,
+  codeLink,
+  deployLink,
+  technologies,
 }) => {
   return (
-    <Card className="hover:scale-110 transition-all" sx={{ maxWidth: 400 }}>
-      <CardMedia sx={{ height: 250 }} image={image} title={title} />
+    <Card
+      className="hover:scale-110 transition-all"
+      sx={{
+        maxWidth: 400,
+        boxShadow: '0 4px 20px rgba(0, 0, 0, 0.5)', // Sombra preta
+        transition: 'box-shadow 0.3s ease-in-out', // Efeito suave na sombra
+      }}
+    >
+      <CardMedia
+        sx={{
+          height: 250,
+          borderRadius: 2,
+        }}
+        image={image}
+        title={title}
+      />
       <CardContent>
-        <Typography gutterBottom variant="h5" component="div" sx={{ display: 'flex', alignItems: 'center' }}>
+        <Typography
+          gutterBottom
+          variant="h5"
+          component="div"
+          sx={{ display: 'flex', alignItems: 'center' }}
+        >
           {title}
           {technologies.map((tech, index) => (
-            <Chip 
-              // biome-ignore lint/suspicious/noArrayIndexKey: <explanation>
-              key={index} 
-              label={tech} 
-              variant="outlined" 
-              sx={{ 
-                ml: 1, 
-                bgcolor: 'purple', 
-                color: 'white', 
-                fontSize: '0.625rem', // Diminuído ainda mais
-                padding: '2px 4px' // Ajustando o padding
-              }} 
+            <Chip
+              key={index}
+              label={tech}
+              variant="outlined"
+              sx={{
+                ml: 1,
+                bgcolor: 'black',
+                color: 'white',
+                fontSize: '0.5rem', // Diminuindo o tamanho da fonte
+                padding: '2px 4px', // Ajustando o padding
+                height: '20px', // Ajustando a altura do chip
+              }}
             />
           ))}
         </Typography>
@@ -53,10 +72,34 @@ const MediaCard: React.FC<MediaCardProps> = ({
       </CardContent>
       <CardActions>
         <a href={codeLink} target="_blank" rel="noopener noreferrer">
-          <Button size="small">Veja o código</Button>
+          <Button
+            size="small"
+            sx={{
+              backgroundColor: 'purple', // Fundo roxo
+              color: 'white', // Texto branco
+              fontWeight: 'bold',
+              '&:hover': {
+                backgroundColor: 'darkviolet', // Efeito ao passar o mouse
+              },
+            }}
+          >
+            Código
+          </Button>
         </a>
         <a href={deployLink} target="_blank" rel="noopener noreferrer">
-          <Button size="small">Deploy do projeto</Button>
+          <Button
+            size="small"
+            sx={{
+              backgroundColor: 'purple', // Fundo roxo
+              color: 'white', // Texto branco
+              fontWeight: 'bold',
+              '&:hover': {
+                backgroundColor: 'darkviolet', // Efeito ao passar o mouse
+              },
+            }}
+          >
+            Deploy
+          </Button>
         </a>
       </CardActions>
     </Card>

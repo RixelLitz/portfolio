@@ -25,7 +25,7 @@ export default function Projects() {
             />
 
             <MediaCard
-              image="./src/assets/projects/another-project.png"
+              image="./src/assets/projects/alphatec.jpg"
               title="AlphaTec"
               description="Descrição do outro projeto. Foi um desafio interessante e aprendi bastante..."
               codeLink="https://github.com/seu-repositorio/outro-projeto"
