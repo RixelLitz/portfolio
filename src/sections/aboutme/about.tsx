@@ -1,7 +1,11 @@
+import WaveSVG from "../../components/WaveSVG";
+
 export default function About() {
   return (
-    <section className="bg-white mt-20  p-14 flex flex-col items-center">
-      <div className="flex justify-center items-center  gap-24">
+    <section className="bg-white flex flex-col items-center">
+     
+      <WaveSVG />
+      <div className="flex justify-center mt-80 items-center  gap-24">
         <div className="w-1/3 ">
           <h1 className="font-fredoka font-medium text-3xl">
             Um pouco sobre mim
@@ -43,6 +47,7 @@ export default function About() {
           </p>
         </div>
       </div>
+      
     </section>
   )
 }

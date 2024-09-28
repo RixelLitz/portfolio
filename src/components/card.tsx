@@ -39,7 +39,7 @@ const MediaCard: React.FC<MediaCardProps> = ({
               variant="outlined" 
               sx={{ 
                 ml: 1, 
-                bgcolor: 'blue', 
+                bgcolor: 'purple', 
                 color: 'white', 
                 fontSize: '0.625rem', // Diminuído ainda mais
                 padding: '2px 4px' // Ajustando o padding

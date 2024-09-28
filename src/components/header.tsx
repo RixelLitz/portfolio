@@ -1,6 +1,6 @@
 export default function Header() {
   return (
-    <header className="flex flex-col p-6 gap-6 w-full">
+    <header className="flex bg-black flex-col p-6 gap-6 w-full fixed z-10">
       <div className="flex justify-center items-center gap-6">
         {/* biome-ignore lint/a11y/useButtonType: <explanation> */}
         <button>

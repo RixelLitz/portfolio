@@ -19,7 +19,7 @@ export default function Main() {
           <div className=" h-full w-1/2 flex justify-center items-center">
             <img
               className=" h-full"
-              src="./src/assets/ilustrations/Programming-amico.png"
+              src="./src/assets/ilustrations/coding.png"
               alt=""
             />
           </div>

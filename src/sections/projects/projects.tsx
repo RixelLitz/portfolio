@@ -3,7 +3,8 @@ import MediaCard from '../../components/card'
 export default function Projects() {
   return (
     <section className="bg-white p-14 flex flex-col items-center">
-      <div className="w-full">
+         <img className="absolute left-0 w-1/4" src="./src/assets/backgrounds/shape-left.png" alt="" />
+      <div className="w-full relative">
         <div className="flex flex-col text-center items-center">
           <h1 className="text-black font-medium text-3xl bg-purple-400 rounded-full p-2">
             Destaques
@@ -33,6 +34,7 @@ export default function Projects() {
             />
           </div>
         </div>
+        
       </div>
     </section>
   )

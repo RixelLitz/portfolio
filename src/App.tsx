@@ -9,8 +9,8 @@ export function App() {
     <>
       <Header />
       <Main />
-      <About/>
-      <Projects/>
+      <About />
+      <Projects />
     </>
   )
 }
