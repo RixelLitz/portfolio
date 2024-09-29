@@ -5,22 +5,22 @@ export default function Header() {
         {/* biome-ignore lint/a11y/useButtonType: <explanation> */}
         <button>
           {/* biome-ignore lint/a11y/useValidAnchor: <explanation> */}
-          <a className="font-fredoka text-white font-medium" href="#">
+          <a className="font-fredoka text-white font-medium" href="#inicio">
             Inicio
           </a>
         </button>
         {/* biome-ignore lint/a11y/useButtonType: <explanation> */}
         <button>
           {/* biome-ignore lint/a11y/useValidAnchor: <explanation> */}
-          <a className="font-fredoka text-white font-medium" href="#">
-            Projetos
+          <a className="font-fredoka text-white font-medium" href="#about">
+            Sobre
           </a>
         </button>
         {/* biome-ignore lint/a11y/useButtonType: <explanation> */}
         <button>
           {/* biome-ignore lint/a11y/useValidAnchor: <explanation> */}
-          <a className="font-fredoka text-white font-medium" href="#">
-            Sobre
+          <a className="font-fredoka text-white font-medium" href="#projects">
+            Projetos
           </a>
         </button>
         {/* biome-ignore lint/a11y/useButtonType: <explanation> */}

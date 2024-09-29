@@ -2,7 +2,7 @@ import { AnimatedBackground } from '../../components/MainAnimation'
 
 export default function Main() {
   return (
-    <main className="flex items-center justify-center w-full h-screen bg-neutral-900 relative">
+    <main id='inicio' className="flex items-center justify-center w-full h-screen bg-neutral-900 relative">
       <div className="absolute w-full h-full">
         <AnimatedBackground />
       </div>

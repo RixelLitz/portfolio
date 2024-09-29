@@ -1,20 +1,21 @@
-import type React from 'react';
-import Card from '@mui/material/Card';
-import CardActions from '@mui/material/CardActions';
-import CardContent from '@mui/material/CardContent';
-import CardMedia from '@mui/material/CardMedia';
-import Button from '@mui/material/Button';
-import Typography from '@mui/material/Typography';
-import Chip from '@mui/material/Chip';
+import type React from 'react'
+import Card from '@mui/material/Card'
+import CardActions from '@mui/material/CardActions'
+import CardContent from '@mui/material/CardContent'
+import CardMedia from '@mui/material/CardMedia'
+import Button from '@mui/material/Button'
+import Typography from '@mui/material/Typography'
+import Chip from '@mui/material/Chip'
+import { GitHub, Launch } from '@mui/icons-material' // Importando ícones
 
 // Define as props do componente
 interface MediaCardProps {
-  image: string;
-  title: string;
-  description: string;
-  codeLink: string;
-  deployLink: string;
-  technologies: string[];
+  image: string
+  title: string
+  description: string
+  codeLink: string
+  deployLink: string
+  technologies: string[]
 }
 
 const MediaCard: React.FC<MediaCardProps> = ({
@@ -52,6 +53,7 @@ const MediaCard: React.FC<MediaCardProps> = ({
           {title}
           {technologies.map((tech, index) => (
             <Chip
+              // biome-ignore lint/suspicious/noArrayIndexKey: <explanation>
               key={index}
               label={tech}
               variant="outlined"
@@ -83,7 +85,7 @@ const MediaCard: React.FC<MediaCardProps> = ({
               },
             }}
           >
-            Código
+            <GitHub sx={{ mr: 0.5 }} /> Código
           </Button>
         </a>
         <a href={deployLink} target="_blank" rel="noopener noreferrer">
@@ -98,12 +100,12 @@ const MediaCard: React.FC<MediaCardProps> = ({
               },
             }}
           >
-            Deploy
+            <Launch sx={{ mr: 0.5 }} /> Deploy
           </Button>
         </a>
       </CardActions>
     </Card>
-  );
-};
+  )
+}
 
-export default MediaCard;
+export default MediaCard
