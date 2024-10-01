@@ -30,14 +30,6 @@ export default function Projects() {
             technologies={['HTML5', 'CSS3', 'JS']}
           />
 
-          <MediaCard
-            image="./src/assets/projects/alphatec.jpg"
-            title="AlphaTec"
-            description="Descrição do outro projeto. Foi um desafio interessante e aprendi bastante..."
-            codeLink="https://github.com/seu-repositorio/outro-projeto"
-            deployLink="https://outroprojeto.com"
-            technologies={['React', 'TypeScript', 'TailWindCSS']}
-          />
         </div>
       </div>
 
@@ -51,55 +43,42 @@ export default function Projects() {
         <div className=" p-6 items-center justify-center flex gap-20 flex-wrap">
           {/* Div que acopla os cards */}
           <MediaCard
-            image="./src/assets/projects/alphatec.jpg"
-            title="AlphaTec"
-            description="Descrição do outro projeto. Foi um desafio interessante e aprendi bastante..."
-            codeLink="https://github.com/seu-repositorio/outro-projeto"
-            deployLink="https://outroprojeto.com"
+            image="./src/assets/projects/expernotes.png"
+            title="ExpertNotes"
+            description="Uma aplicação web feito com React, TypeScript e TailWindCSS, esse projeto foi feito para gerenciar notas. podendo salvar, editar e deletar."
+            codeLink="https://github.com/RixelLitz/Expert-Notes?tab=readme-ov-file"
+            deployLink="https://expert-notes-phi.vercel.app/"
             technologies={['React', 'TypeScript', 'TailWindCSS']}
           />
           <MediaCard
-            image="./src/assets/projects/alphatec.jpg"
-            title="AlphaTec"
-            description="Descrição do outro projeto. Foi um desafio interessante e aprendi bastante..."
-            codeLink="https://github.com/seu-repositorio/outro-projeto"
-            deployLink="https://outroprojeto.com"
-            technologies={['React', 'TypeScript', 'TailWindCSS']}
+            image="./src/assets/projects/devlinks.png"
+            title="DevLinks"
+            description="Um projeto que fez parte do meu aprendizado e consolidou muito meus conhecimentos. Eu pensei, por que não unir todas minhas redes sociais em um só lugar?"
+            codeLink="https://github.com/RixelLitz/dev-links"
+            deployLink="https://dev-links-lake.vercel.app/"
+            technologies={['HTML5', 'CSS3', 'JS']}
           />
 
           <MediaCard
-            image="./src/assets/projects/alphatec.jpg"
+            image="./src/assets/projects/spotify.png"
             title="AlphaTec"
-            description="Descrição do outro projeto. Foi um desafio interessante e aprendi bastante..."
-            codeLink="https://github.com/seu-repositorio/outro-projeto"
-            deployLink="https://outroprojeto.com"
-            technologies={['React', 'TypeScript', 'TailWindCSS']}
-          />
-          <MediaCard
-            image="./src/assets/projects/alphatec.jpg"
-            title="AlphaTec"
-            description="Descrição do outro projeto. Foi um desafio interessante e aprendi bastante..."
-            codeLink="https://github.com/seu-repositorio/outro-projeto"
-            deployLink="https://outroprojeto.com"
-            technologies={['React', 'TypeScript', 'TailWindCSS']}
-          />
-          <MediaCard
-            image="./src/assets/projects/alphatec.jpg"
-            title="AlphaTec"
-            description="Descrição do outro projeto. Foi um desafio interessante e aprendi bastante..."
-            codeLink="https://github.com/seu-repositorio/outro-projeto"
-            deployLink="https://outroprojeto.com"
-            technologies={['React', 'TypeScript', 'TailWindCSS']}
-          />
-          <MediaCard
-            image="./src/assets/projects/alphatec.jpg"
-            title="AlphaTec"
-            description="Descrição do outro projeto. Foi um desafio interessante e aprendi bastante..."
-            codeLink="https://github.com/seu-repositorio/outro-projeto"
-            deployLink="https://outroprojeto.com"
-            technologies={['React', 'TypeScript', 'TailWindCSS']}
+            description="Uma copia do spotify, treinei e pratiquei meus conhecimentos com responsividade, inclusive dei aula ensinando fazer esse projeto."
+            codeLink="https://github.com/RixelLitz/Spotify-Alura?tab=readme-ov-file"
+            deployLink="https://spotify-rb.vercel.app/"
+            technologies={['HTML', 'CSS', 'JS']}
           />
         </div>
+      </div>
+      <div className="flex flex-col items-center text-center justify-center gap-8">
+        <h1 className="text-black text-2xl font-medium font-fredoka mt-10">
+          Mais projetos chegando!
+        </h1>
+        {/* biome-ignore lint/a11y/useButtonType: <explanation> */}
+<button className='bg-purple-400 text-1xl text-white font-fredoka font-medium pr-6 pl-6 p-2 rounded-full'>
+          <a href="https://github.com/RixelLitz">
+            Acompanhe o desenvolvimento!
+          </a>
+        </button>
       </div>
     </section>
   )

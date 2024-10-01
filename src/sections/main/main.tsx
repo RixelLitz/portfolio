@@ -7,7 +7,7 @@ export default function Main() {
         <AnimatedBackground />
       </div>
       <div className=" flex items-center w-1/2 h-1/2 ">
-        <div className="flex items-center gap-44 w-full h-full relative">
+        <div className=" flex items-center gap-44 w-full h-full relative">
           <div className="flex flex-col justify-end">
             <h1 className="flex justify-center  p-2 font-fredoka text-5xl text-white">
               Rian Britto Pereira
