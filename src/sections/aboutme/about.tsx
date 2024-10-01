@@ -1,11 +1,12 @@
-import WaveSVG from '../../components/WaveSVG'
+import WaveSVG from '../../components/WaveSVG';
+import LazyImage from '../../components/LazyImage';
 
 export default function About() {
   return (
     <section id='about' className="bg-white flex flex-col items-center">
       <WaveSVG />
-      <div className="flex justify-center mt-80 items-center  gap-24">
-        <div className="w-1/3 ">
+      <div className="flex justify-center mt-80 items-center gap-24">
+        <div className="w-1/3">
           <h1 className="font-fredoka font-medium text-3xl">
             Um pouco sobre mim
           </h1>
@@ -20,17 +21,20 @@ export default function About() {
             consequuntur repellat.
           </p>
         </div>
-        <div className="h-full ">
-          <img
+        <div className="h-full">
+          <LazyImage
             className="h-full"
             src="./src/assets/ilustrations/aboutme.gif"
-            alt=""
+            alt="Sobre mim"
           />
         </div>
       </div>
-      <div className="flex justify-center items-center  gap-24">
+      <div className="flex justify-center items-center gap-24">
         <div>
-          <img src="./src/assets/ilustrations/rocket.gif" alt="" />
+          <LazyImage
+            src="./src/assets/ilustrations/rocket.gif"
+            alt="Objetivo"
+          />
         </div>
         <div className="w-1/3">
           <h1 className="font-fredoka font-medium text-3xl">Meu objetivo</h1>
@@ -47,5 +51,5 @@ export default function About() {
         </div>
       </div>
     </section>
-  )
+  );
 }
